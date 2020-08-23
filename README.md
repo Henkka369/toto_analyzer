@@ -1,5 +1,6 @@
-# Toto-tuloksien haku ja analysointi
+# Toto Analyzer
 
-Tämä sovellus koostuu kahdesta erillisestä osasta: toto_analyzer.py ja data_fetch.py. progress_bar.py on apufunktio edistymispalkin tulostamiseen, 
-mitä data_fetch.py-tiedosto käyttää. data_fetch.py hakee Veikkauksen APIsta toto-tulokset halutulta aikaväliltä ja tallentaa ne json-tiedostoon.
-toto_analyzer.py tarjoaa käyttäjälle konsolikäyttöliittymän json-tiedoston datan tarkastelua varten.
+Tämä sovellus hakee Toto-tilastoja ja esittää tuloksia eri näkökulmista. Sovellus koostuu kahdesta erillisestä osasta: toto_analyzer.py ja data_fetch.py. progress_bar.py on apufunktio edistymispalkin tulostamiseen, mitä data_fetch.py-tiedosto käyttää. data_fetch.py hakee Veikkauksen APIsta Toto-tulokset halutulta aikaväliltä ja tallentaa ne json-tiedostoon. toto_analyzer.py tarjoaa käyttäjälle konsolikäyttöliittymän json-tiedoston datan tarkastelua varten.
+
+## data_fetch.py
+Tiedoston ensimmäisillä riveillä määritellään muuttujat startDate ja endDate. Ohjelma hakee näiden kahden päivämäärän väliseltä ajalta kaikki Suomen Toto-tulokset ja tallentaa ne json-tiedostoon. Ohjelma tallentaa jokaisesta lähdöstä kolme ensimmäistä hevosta maaliintulojärjestyksessä ja tiedon oliko lähtö voltti- vai autolähtö. Tiedoista muodostetaan Pythonin dictionary, jonka avaimena toimii kolmen ensimmäisen hevosen numerot ja tieto lähdön tyypistä pilkuilla eroteltuna. Dictionaryn arvona on kokonaisluku, joka kuvastaa montako kertaa kyseinen avain esiintyi haetussa datassa. Lopuksi ohjelma kirjoittaa data.json-nimisen tiedoston, joka sisältää dictionaryn ja tallentaa sen samaan tiedostosijaintiin, jossa data_fetch.py sijaitsee. 
