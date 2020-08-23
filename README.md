@@ -8,12 +8,12 @@ Tiedoston ensimmäisillä riveillä määritellään muuttujat startDate ja endD
 
 ## toto_analyzer.py
 Jos data.json-tiedostoa ei ole samassa tiedostosijainnissa tämän tiedoston kanssa, ohjelma tulostaa rivin, jossa tämä ilmoitetaan ja päättyy. Datan löytyessä ohjelma tulostaa konsoliin vaihtoehdot, joista käyttäjä voi valita, miten haluaa haettuja tuloksia tarkastella. Konsoliin tulostetaan yhdeksän numeroitua vaihtoehtoa ja rivi, jolle käyttäjä voi syöttää halutun numeron. Tämän jälkeen konsoliin tulostetaan 20 datassa eniten esiintyvää yhdistelmää tai numeroa. Lopuksi käyttäjä voi aloittaa ohjelman alusta tai lopettaa sen. Mahdolliset valinnat datan tarkastelua varten ovat:
-**1. Voittaja:** Tulostaa numerot, jotka ovat voittaneet eniten lähtöjä.
-**2. Kaksari:** Tulostaa kaksariparit, jotka esiintyivät eniten datassa.
-**3. Troikka:** Tulostaa troikkayhdistelmät, jotka esiintyivät eniten datassa.
-**4. Voittaja (volttilähtö):** Ottaa huomioon vain volttilähtöjen voittajat.
-**5. Voittaja (autolähtö):** Ottaa huomioon vain autolähtöjen voittajat.
-**6. Kaksari (volttilähtö):** Ottaa huomioon vain volttilähtöjen kaksariparit.
-**7. Kaksari (autolähtö):** Ottaa huomioon vain autolähtöjen kaksariparit.
-**8. Troikka (volttilähtö):** Ottaa huomioon vain volttilähtöjen troikkayhdistelmät.
-**9. Troikka (autolähtö):** Ottaa huomioon vain autolähtöjen troikkayhdistelmät.
+1. **Voittaja:** Tulostaa numerot, jotka ovat voittaneet eniten lähtöjä.
+2. **Kaksari:** Tulostaa kaksariparit, jotka esiintyivät eniten datassa.
+3. **Troikka:** Tulostaa troikkayhdistelmät, jotka esiintyivät eniten datassa.
+4. **Voittaja (volttilähtö):** Ottaa huomioon vain volttilähtöjen voittajat.
+5. **Voittaja (autolähtö):** Ottaa huomioon vain autolähtöjen voittajat.
+6. **Kaksari (volttilähtö):** Ottaa huomioon vain volttilähtöjen kaksariparit.
+7. **Kaksari (autolähtö):** Ottaa huomioon vain autolähtöjen kaksariparit.
+8. **Troikka (volttilähtö):** Ottaa huomioon vain volttilähtöjen troikkayhdistelmät.
+9. **Troikka (autolähtö):** Ottaa huomioon vain autolähtöjen troikkayhdistelmät.
